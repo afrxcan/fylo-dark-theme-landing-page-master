@@ -1,0 +1,71 @@
+/* 1. Reset and Box Sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Global Variables (Colors) */
+:root {
+  --main-bg: hsl(218, 28%, 13%);
+  --intro-bg: hsl(217, 28%, 15%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* 3. Body Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* 4. Heading Styles */
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* 5. Image Reset */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Attribution (moved from HTML) */
+.attribution { font-size: 11px; text-align: center; margin-top: 2rem; }
+.attribution a { color: var(--cyan); }
+
+/* Header & Navigation */
+header {
+  display: flex;
+  justify-content: space-between; /* Pushes items to opposite ends */
+  align-items: center;            /* Aligns them vertically in the middle */
+  padding: 1.5rem 3rem;           /* Adds breathing room around the edges */
+}
+
+/* The Navigation List */
+nav ul {
+  display: flex;    /* Makes the list items sit in a row */
+  list-style: none; /* Removes the bullet points */
+  gap: 2rem;        /* Adds space between the links */
+}
+
+/* The Links */
+nav a {
+  text-decoration: none; /* Removes the underline */
+  color: var(--white);
+  opacity: 0.8;          /* Makes them slightly dim */
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 1;            /* Brightens them up when you hover */
+  text-decoration: underline;
+}
